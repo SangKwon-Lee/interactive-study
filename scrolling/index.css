@@ -1,0 +1,157 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	height: 200vh;
+	background-color: #00110C;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+a{
+	color:unset;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0px 16px;
+	background-color: #04120C;
+	color: #BBE1EE;
+	position: sticky;
+	top:0;
+}
+
+.button-in-header{
+	padding:10px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.button-in-header:hover{
+	background-color: #127374;
+
+}
+
+#right-buttons{
+	display: flex;
+}
+
+#active-menu{
+	background-color: #013A3B;;
+}
+
+#image-wrapper{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#main-image{
+	width: 100%;
+}
+
+#document-title{
+	margin: 40px;
+	color:#B8E1EE;
+	font-size:170%;
+	font-weight: 300;
+	letter-spacing: 10px;
+}
+
+
+#main-content-wrapper{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#mountain-tag-wrapper{
+	font-size: 18px;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	gap:50px;
+}
+
+.mountain-content-wrapper{
+	display: flex;
+	flex-direction: column;
+	gap:40px;
+}
+
+.mountain-content-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:4px 12px;
+	height:32px;
+	width: 325px;
+	color: #04120C;
+	background-color: #B8E1EE;
+}
+
+.long-text{
+	display: none;
+}
+.short-text{
+	display: inline;
+}
+
+@media (min-width:880px){
+	.long-text{
+		display: inline;
+	}
+	.short-text{
+		display: none;
+	}
+
+	#mountain-tag-wrapper{
+		flex-direction: row;
+	}
+}
